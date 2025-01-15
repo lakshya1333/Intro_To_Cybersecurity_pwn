@@ -53,4 +53,22 @@ Connection: close
 pwn.college{0xU7F4bdeU3DValDe6NVBv5wUpn.dJzNyMDLxkTM0kzW}
 ```
 
+## Level 6:
+Set the host header in an HTTP request using python:
+
+```bash
+Python script:
+import requests as r
+
+Host = "http://127.0.0.1"
+Header = {"Host": "99c3d4af52895d160acd747c14e6d04b"}
+
+res = r.get(Host,headers = Header)
+
+print(res.text)
+```
+
+
+
+
 
